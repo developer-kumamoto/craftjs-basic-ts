@@ -4,7 +4,7 @@ import {Text} from "./Text";
 import {Button} from "./Button";
 import { Element, useNode, UserComponent } from "@craftjs/core";
 
-import { Container } from "./Container";
+import { Container, ContainerDefaultProps, ContainerSettings } from "./Container";
 import { Property } from "csstype";
 
 // Notice how CardTop and CardBottom do not specify the drag connector. This is because we won't be using these components as draggables; adding the drag handler would be pointless.
@@ -69,3 +69,10 @@ export const Card: UserComponent<CardProp> = ({ background, padding = 20 }) => {
     </Container>
   );
 };
+Card.craft = {
+  props: ContainerDefaultProps,
+  related: {
+    // Since Card has the same settings as Container, we'll just reuse ContainerSettings 
+    settings: ContainerSettings
+  }
+}
