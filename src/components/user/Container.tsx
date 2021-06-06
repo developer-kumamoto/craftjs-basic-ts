@@ -7,7 +7,7 @@ import { useNode, UserComponent } from "@craftjs/core";
 export type ContainerProp = {
   background?: Property.Background<string | number> | undefined;
   padding?: Property.Padding<string | number> | undefined;
-  children: ReactNode;
+  children?: ReactNode;
 };
 
 export const Container: UserComponent<ContainerProp> = ({
