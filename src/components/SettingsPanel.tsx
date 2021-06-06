@@ -6,9 +6,6 @@ import {
   Grid,
   Typography,
   Button as MaterialButton,
-  FormControl,
-  FormLabel,
-  Slider,
 } from "@material-ui/core";
 import { useEditor } from "@craftjs/core";
 

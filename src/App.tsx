@@ -12,7 +12,6 @@ import { Button } from "./components/user/Button";
 import { Card } from "./components/user/Card";
 import { Text } from "./components/user/Text";
 import { Editor, Frame, Element } from "@craftjs/core";
-
 export default function App() {
   return (
     <div style={{ margin: "0 auto", width: "800px" }}>

@@ -13,7 +13,7 @@ import { Container } from "./user/Container";
 import { Card } from "./user/Card";
 
 export const Toolbox = () => {
-  const { connectors, query } = useEditor();
+  const { connectors } = useEditor();
   return (
     <Box px={2} py={2}>
       <Grid
